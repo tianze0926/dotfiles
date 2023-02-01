@@ -41,6 +41,10 @@ export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 
 xinput --set-prop 'pointer:Logitech M585/M590' 'libinput Accel Speed' 0.9
+xinput --set-prop 'MSFT0001:00 04F3:3138 Touchpad' 'libinput Accel Speed' 0.6
+xinput --set-prop 'MSFT0001:00 04F3:3138 Touchpad' 'libinput Natural Scrolling Enabled' 1
+xinput --set-prop 'MSFT0001:00 04F3:3138 Touchpad' 'libinput Tapping Enabled' 1
+xinput --set-prop 'MSFT0001:00 04F3:3138 Touchpad' 'libinput Tapping Drag Lock Enabled' 1
 autorandr --change
 
 exec i3

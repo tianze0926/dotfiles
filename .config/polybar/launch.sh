@@ -8,7 +8,7 @@ polybar-msg cmd quit
 
 # Launch bar
 
-tray_output=DisplayPort-0
+tray_output='DisplayPort-[0|1]'
 
 for m in $(polybar --list-monitors | cut -d":" -f1); do
     tray_position=none

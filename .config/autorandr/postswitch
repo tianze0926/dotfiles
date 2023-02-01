@@ -1,0 +1,29 @@
+#!/usr/bin/bash
+
+if [[ $AUTORANDR_CURRENT_PROFILE == 'single' ]]; then
+    cursor_size=48
+    dpi=192
+    polybar_tray_output='eDP'
+    polybar_tray_maxsize=20
+    polybar_dpi=120
+else
+    cursor_size=24
+    dpi=120
+    polybar_tray_output='DisplayPort-[0|1]'
+    polybar_tray_maxsize=14
+    polybar_dpi=80
+fi
+
+if [[ -z $cursor_size || -z $dpi || -z $polybar_tray_output || -z $polybar_tray_maxsize || -z $polybar_dpi ]]; then
+    echo 'autorandr postswitch condition branch unconsidered'
+    exit 1
+fi
+
+sed -i "s/Xft.dpi: \w\+/Xft.dpi: $dpi/" ~/.Xresources
+sed -i "s/Xcursor.size: \w\+/Xcursor.size: $cursor_size/" ~/.Xresources
+sed -i "s/gtk-cursor-theme-size=\w\+/gtk-cursor-theme-size=$cursor_size/" ~/.config/gtk-3.0/settings.ini
+sed -i "s/gtk-cursor-theme-size=\w\+/gtk-cursor-theme-size=$cursor_size/" ~/.config/gtk-4.0/settings.ini
+
+sed -i "s/tray_output=.*/tray_output='$polybar_tray_output'/" ~/.config/polybar/launch.sh
+sed -i "s/tray-maxsize = .*/tray-maxsize = $polybar_tray_maxsize/" ~/.config/polybar/config.ini
+sed -i "s/dpi = .*/dpi = $polybar_dpi/" ~/.config/polybar/config.ini
