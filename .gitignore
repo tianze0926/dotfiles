@@ -19,6 +19,7 @@
 !.config/polybar/config.ini
 !.config/polybar/launch.sh
 !.config/chromium-flags.conf
+!.config/logind.conf
 
 !.Xresources
 !.xinitrc
