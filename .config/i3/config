@@ -173,6 +173,10 @@ bindsym $mod+minus scratchpad show
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
+# dim-screen & locker
+exec --no-startup-id xset s 600 600 && xss-lock --notifier dim-screen.sh -- i3lock --nofork
+
+# Chromium
 exec --no-startup-id i3-msg 'workspace 1; exec chromium; workspace 1'
 
 # clipboard manager
