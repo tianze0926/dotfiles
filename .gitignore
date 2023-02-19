@@ -1,6 +1,7 @@
 *
 !.gitignore
 !.gitconfig
+!README.md
 
 !.config/
 !.config/i3/
