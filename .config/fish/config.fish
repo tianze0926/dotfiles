@@ -6,6 +6,10 @@ function sys_sleep
     sudo systemctl suspend
 end
 
+function lock_sleep
+    i3lock & && sys_sleep
+end
+
 function ddc
     sudo modprobe i2c-dev
     if count $argv > /dev/null
