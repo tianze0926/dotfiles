@@ -2,9 +2,9 @@
 
 ## Dotfiles
 
-- Window manager: `.config/i3`
-- Status bar: `.config/polybar`
-- File manager: `.config/lf`
+- Window manager: `.config/i3/`
+- Status bar: `.config/polybar/`
+- File manager: `.config/lf/`
 - `.gitconfig`
   - proxy
   - user info
@@ -16,14 +16,15 @@
   - fcitx
   - mouse & trackpad speed
   - autorandr
-- `.config/autorandr`: multiple displays
-- `.config/gtk-3.0` & `.config/gtk-4.0`
+- `.config/autorandr/`: multiple displays
+- `.config/gtk-3.0/` & `.config/gtk-4.0/`
   - cursor theme & size
+- `.config/dunst/`: notification
 - `.config/chromium-flags.conf`
   - proxy
 - `.config/logind.conf`: systemd logind
   - powerkey action
-- `.ssh/config`
+- `.ssh/config/`
   - ssh via proxy
 
 ## Packages
@@ -73,6 +74,7 @@
     ```
   - `xclip` (for nvim system clipboard to work properly)
 - Input method: `fcitx5-im` & `fcitx5-chinese-addons` & `fcitx5-pinyin-zhwiki` (words library) & `fcitx5-nord` (theme)
+- Notification: `libnotify`, `dunst`
 - Default application: `selectdefaultapplication-git`
 - Theme: `lxappearance-gtk3`
 - Screenshot: `maim`

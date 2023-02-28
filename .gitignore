@@ -19,6 +19,8 @@
 !.config/polybar/
 !.config/polybar/config.ini
 !.config/polybar/launch.sh
+!.config/dunst/
+!.config/dunst/dunstrc
 !.config/chromium-flags.conf
 !.config/logind.conf
 

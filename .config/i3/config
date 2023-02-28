@@ -187,6 +187,9 @@ for_window [class="copyq"] floating enable
 exec --no-startup-id blueman-applet
 for_window [class="Blueman-manager"] floating enable
 
+# notification
+exec --no-startup-id dunst
+
 # volume control
 for_window [class="Pavucontrol"] floating enable
 
