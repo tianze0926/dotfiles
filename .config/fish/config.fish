@@ -19,4 +19,6 @@ function ddc
     end
 end
 
+# lf
+set -gx EDITOR nvim
 set -gx LF_BOOKMARK_PATH /home/leo/.config/lf/bookmarks
