@@ -24,6 +24,11 @@
 !.config/chromium-flags.conf
 !.config/logind.conf
 
+!.local/
+!.local/share/
+!.local/share/applications/
+!.local/share/applications/microsoft-edge.desktop
+
 !.Xresources
 !.xinitrc
 
