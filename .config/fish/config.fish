@@ -19,6 +19,14 @@ function ddc
     end
 end
 
+function dpms
+    if count $argv > /dev/null
+    	xset s off
+    else
+    	xset s $argv $argv
+    end
+end
+
 # lf
 set -gx EDITOR nvim
 set -gx LF_BOOKMARK_PATH /home/leo/.config/lf/bookmarks
