@@ -23,6 +23,7 @@
 !.config/dunst/dunstrc
 !.config/chromium-flags.conf
 !.config/logind.conf
+!.config/picom.conf
 
 !.local/
 !.local/share/

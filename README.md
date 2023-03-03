@@ -24,6 +24,7 @@
   - proxy
 - `.config/logind.conf`: systemd logind
   - powerkey action
+- `.config/picom.conf`: compositor
 - `.ssh/config/`
   - ssh via proxy
 
