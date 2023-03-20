@@ -111,3 +111,7 @@ set cleaner ctpvclear
 # custom key bindings
 map gd cd ~/Downloads
 map gv ${{ vlc . }}
+map gp ${{
+    ~/mnt/pi/mount.sh || true
+    lf -remote "send $id cd ~/mnt/pi/mnt"
+}}

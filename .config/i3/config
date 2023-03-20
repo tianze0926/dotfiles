@@ -173,6 +173,8 @@ bindsym $mod+minus scratchpad show
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
+exec --no-startup-id picom
+
 # dim-screen & locker
 # exec --no-startup-id xset s 600 600 && xss-lock --notifier dim-screen.sh -- i3lock --nofork
 
@@ -204,6 +206,9 @@ exec --no-startup-id seadrive-gui
 
 # wemeet
 for_window [class="wemeet"] floating enable
+
+# wechat
+for_window [instance="wechat.exe"] floating enable
 
 # bitwarden chrome extension
 for_window [instance="crx_nngceckbapebfimnlniiiahkandclblb"] floating enable

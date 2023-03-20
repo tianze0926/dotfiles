@@ -30,3 +30,11 @@ end
 # lf
 set -gx EDITOR nvim
 set -gx LF_BOOKMARK_PATH /home/leo/.config/lf/bookmarks
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+if test -f /home/leo/miniconda3/bin/conda
+    eval /home/leo/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+end
+# <<< conda initialize <<<
+
