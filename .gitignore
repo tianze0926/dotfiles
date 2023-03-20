@@ -21,6 +21,7 @@
 !.config/polybar/launch.sh
 !.config/dunst/
 !.config/dunst/dunstrc
+!.config/proxy/
 !.config/chromium-flags.conf
 !.config/logind.conf
 !.config/picom.conf

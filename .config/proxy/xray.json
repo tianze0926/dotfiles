@@ -1,0 +1,83 @@
+{
+  "log": {
+    "loglevel": "info"
+  },
+  "inbounds": [
+    {
+      "listen": "0.0.0.0",
+      "port": 2081,
+      "protocol": "http"
+    },
+    {
+      "listen": "0.0.0.0",
+      "port": 2080,
+      "protocol": "socks"
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "socks",
+      "tag": "proxy",
+      "settings": {
+        "servers": [
+          {
+            "address": "upstream",
+            "port": 1080
+          }
+        ]
+      }
+    },
+    {
+      "protocol": "freedom",
+      "tag": "direct",
+      "settings": {
+        "domainStrategy": "UseIP"
+      }
+    },
+    {
+      "protocol": "blackhole",
+      "tag": "block"
+    }
+  ],
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      // {
+      //   "type": "field",
+      //   "domain": ["geosite:category-ads-all"],
+      //   "outboundTag": "block"
+      // },
+      {
+        "type": "field",
+        "domain": [
+          "geosite:cn",
+          "domain:tianze.me",
+          "domain:byr.pt",
+          "domain:tjupt.org",
+          "domain:pterclub.com",
+          "domain:mjrc.ml",
+          "domain:epicgames.com"
+        ],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
+        "domain": [
+          "geosite:geolocation-!cn",
+          "geosite:tiktok"
+        ],
+        "outboundTag": "proxy"
+      },
+      {
+        "type": "field",
+        "ip": ["geoip:private", "geoip:cn"],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
+        "ip": ["geoip:!cn"],
+        "outboundTag": "proxy"
+      }
+    ]
+  }
+}
