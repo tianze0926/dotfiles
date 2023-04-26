@@ -6,8 +6,12 @@ function sys_sleep
     sudo systemctl suspend
 end
 
-function lock_sleep
-    i3lock & && sys_sleep
+function slock
+    i3lock -c 000000 & && sys_sleep
+end
+
+function lock
+    i3lock -c 000000
 end
 
 function ddc
@@ -20,10 +24,9 @@ function ddc
 end
 
 function dpms
-    if count $argv > /dev/null
-    	xset s off
-    else
-    	xset s $argv $argv
+    while true
+        xdotool key 0x0
+	sleep 60
     end
 end
 
