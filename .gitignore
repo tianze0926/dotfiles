@@ -33,6 +33,7 @@
 
 !.Xresources
 !.xinitrc
+!.fonts.conf
 
 !.ssh/
 !.ssh/config

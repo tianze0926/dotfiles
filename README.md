@@ -16,6 +16,8 @@
   - fcitx
   - mouse & trackpad speed
   - autorandr
+- `.fonts.conf`
+  - [Chinese characters displayed as variant (Japanese) glyphs](https://wiki.archlinux.org/title/Localization/Simplified_Chinese#Chinese_characters_displayed_as_variant_(Japanese)_glyphs)
 - `.config/autorandr/`: multiple displays
 - `.config/gtk-3.0/` & `.config/gtk-4.0/`
   - cursor theme & size
