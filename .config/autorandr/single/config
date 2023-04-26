@@ -7,6 +7,7 @@ crtc 1
 mode 2560x1600
 pos 0x0
 rate 59.99
+transform 0.999878,0.000000,0.000000,0.000000,0.999878,0.000000,0.000000,0.000000,1.000000
 x-prop-max_bpc 16
 x-prop-non_desktop 0
 x-prop-scaling_mode None
