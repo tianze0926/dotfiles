@@ -4,8 +4,9 @@ services:
   xray:
     image: teddysun/xray
     restart: unless-stopped
+    command: ["/usr/bin/xray", "-config", "/etc/xray/config.yml"]
     volumes:
-      - ./xray.json:/etc/xray/config.json
+      - ./xray.yml:/etc/xray/config.yml
     ports:
       - 2081:2081
       - 2080:2080

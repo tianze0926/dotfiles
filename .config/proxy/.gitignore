@@ -1,4 +1,4 @@
 !docker-compose.yml
-!xray.json
+!xray.yml
 !naive.example.json
 !hysteria.example.json
