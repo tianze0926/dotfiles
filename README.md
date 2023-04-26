@@ -22,7 +22,7 @@
 - `.config/dunst/`: notification
 - `.config/chromium-flags.conf`
   - proxy
-- `.config/logind.conf`: systemd logind
+- `.config/logind.conf` -> `/etc/systemd/logind.conf`: systemd logind
   - powerkey action
 - `.config/picom.conf`: compositor
 - `.ssh/config/`
