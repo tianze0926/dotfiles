@@ -30,3 +30,8 @@ services:
   #     - 20172:20172 # http
   #   volumes:
   #     - ./web_conf:/etc/v2raya
+
+networks:
+  default:
+    name: apps
+    external: true
