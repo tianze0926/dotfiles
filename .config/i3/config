@@ -196,7 +196,8 @@ exec --no-startup-id dunst
 for_window [class="Pavucontrol"] floating enable
 
 # screenshot
-bindsym Print exec --no-startup-id maim -s | copyq write image/png -
+# bindsym Print exec --no-startup-id maim -s | copyq write image/png -
+bindsym F1 exec --no-startup-id flameshot gui
 
 # emails
 exec --no-startup-id birdtray
