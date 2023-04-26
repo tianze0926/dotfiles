@@ -50,6 +50,13 @@
       {
         "type": "field",
         "domain": [
+          "geosite:tiktok"
+        ],
+        "outboundTag": "proxy"
+      },
+      {
+        "type": "field",
+        "domain": [
           "geosite:cn",
           "domain:tianze.me",
           "domain:byr.pt",
@@ -59,14 +66,6 @@
           "domain:epicgames.com"
         ],
         "outboundTag": "direct"
-      },
-      {
-        "type": "field",
-        "domain": [
-          "geosite:geolocation-!cn",
-          "geosite:tiktok"
-        ],
-        "outboundTag": "proxy"
       },
       {
         "type": "field",
