@@ -16,15 +16,15 @@
   - fcitx
   - mouse & trackpad speed
   - autorandr
-- `.fonts.conf`
-  - [Chinese characters displayed as variant (Japanese) glyphs](https://wiki.archlinux.org/title/Localization/Simplified_Chinese#Chinese_characters_displayed_as_variant_(Japanese)_glyphs)
 - `.config/autorandr/`: multiple displays
 - `.config/gtk-3.0/` & `.config/gtk-4.0/`
   - cursor theme & size
 - `.config/dunst/`: notification
 - `.config/chromium-flags.conf`
   - proxy
-- `.config/logind.conf` -> `/etc/systemd/logind.conf`: systemd logind
+- `etc/fonts/conf.d/64-language-selector-prefer.conf`
+  - [Chinese characters displayed as variant (Japanese) glyphs](https://wiki.archlinux.org/title/Localization/Simplified_Chinese#Chinese_characters_displayed_as_variant_(Japanese)_glyphs)
+- `etc/systemd/logind.conf`: systemd logind
   - powerkey action
 - `.config/picom.conf`: compositor
 - `.ssh/config/`

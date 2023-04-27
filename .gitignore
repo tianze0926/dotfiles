@@ -23,7 +23,6 @@
 !.config/dunst/dunstrc
 !.config/proxy/
 !.config/chromium-flags.conf
-!.config/logind.conf
 !.config/picom.conf
 
 !.local/
@@ -31,9 +30,15 @@
 !.local/share/applications/
 !.local/share/applications/microsoft-edge.desktop
 
+!etc/
+!etc/fonts/
+!etc/fonts/conf.d/
+!etc/fonts/conf.d/64-language-selector-prefer.conf
+!etc/systemd/
+!etc/systemd/logind.conf
+
 !.Xresources
 !.xinitrc
-!.fonts.conf
 
 !.ssh/
 !.ssh/config
