@@ -9,14 +9,16 @@
 - `.gitconfig`
   - proxy
   - user info
-- `.Xresources`
-  - HiDPI
-  - cursor theme & size
-- `.xinitrc`: launch i3
-  - HiDPI
-  - fcitx
-  - mouse & trackpad speed
-  - autorandr
+- X
+  - `.Xresources`
+    - HiDPI
+    - cursor theme & size
+  - `.xinitrc`: launch i3
+    - HiDPI
+    - fcitx
+    - mouse & trackpad speed
+    - autorandr
+  - MIME: `.config/mimeapps.list` & [`.local/share/applications/mimeapps.list`](https://wiki.archlinux.org/title/XDG_MIME_Applications#mimeapps.list:~:text=Tip%3A-,Although,-deprecated%2C%20several%20applications)
 - `.config/autorandr/`: multiple displays
 - `.config/gtk-3.0/` & `.config/gtk-4.0/`
   - cursor theme & size

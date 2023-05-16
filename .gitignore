@@ -24,12 +24,14 @@
 !.config/dunst/
 !.config/dunst/dunstrc
 !.config/proxy/
+!.config/mimeapps.list
 !.config/chromium-flags.conf
 !.config/picom.conf
 
 !.local/
 !.local/share/
 !.local/share/applications/
+!.local/share/applications/mimeapps.list
 !.local/share/applications/microsoft-edge.desktop
 
 !etc/
