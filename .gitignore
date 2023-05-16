@@ -13,6 +13,8 @@
 !.config/gtk-4.0/
 !.config/gtk-4.0/settings.ini
 !.config/fish/
+!.config/fish/functions/
+!.config/fish/functions/**
 !.config/fish/config.fish
 !.config/lf/
 !.config/lf/lfrc

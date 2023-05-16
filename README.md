@@ -4,6 +4,7 @@
 
 - Window manager: `.config/i3/`
 - Status bar: `.config/polybar/`
+- Fish shell: `.config/fish/`
 - File manager: `.config/lf/`
 - `.gitconfig`
   - proxy
@@ -81,6 +82,7 @@
 - Default application: `selectdefaultapplication-git`
 - Theme: `lxappearance-gtk3`
 - Screenshot: `maim`
+- QR Code Scanner: `zbar`
 - Multiple screens handling: `autorandr`
 - DDC manager: `ddcutil`
 
