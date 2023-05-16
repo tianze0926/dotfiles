@@ -1,0 +1,10 @@
+font:
+  normal:
+    family: NotoSansM Nerd Font
+    style: Regular
+
+  bold:
+    family: NotoSansM Nerd Font
+    style: Bold
+
+  size: 11

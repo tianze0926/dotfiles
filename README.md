@@ -4,6 +4,8 @@
 
 - Window manager: `.config/i3/`
 - Status bar: `.config/polybar/`
+- Terminal: `.config/alacritty/alacritty.yml`
+- Tmux: `.config/tmux/tmux.conf`
 - Fish shell: `.config/fish/`
 - File manager: `.config/lf/`
 - `.gitconfig`
