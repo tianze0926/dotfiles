@@ -8,7 +8,7 @@
 !.config/i3/config
 !.config/tmux/
 !.config/tmux/tmux.conf
-!.config/alacritty
+!.config/alacritty/
 !.config/alacritty/alacritty.yml
 !.config/autorandr/
 !.config/autorandr/**
