@@ -27,3 +27,10 @@ sed -i "s/gtk-cursor-theme-size=\w\+/gtk-cursor-theme-size=$cursor_size/" ~/.con
 sed -i "s/tray_output=.*/tray_output='$polybar_tray_output'/" ~/.config/polybar/launch.sh
 sed -i "s/tray-maxsize = .*/tray-maxsize = $polybar_tray_maxsize/" ~/.config/polybar/config.ini
 sed -i "s/dpi = .*/dpi = $polybar_dpi/" ~/.config/polybar/config.ini
+
+xinput --set-prop 'pointer:Logitech M585/M590' 'libinput Accel Speed' 0.9
+xinput --set-prop 'pointer:RAPOO Rapoo 2.4G Wireless Device' 'libinput Accel Speed' 1
+xinput --set-prop 'MSFT0001:00 04F3:3138 Touchpad' 'libinput Accel Speed' 0.6
+xinput --set-prop 'MSFT0001:00 04F3:3138 Touchpad' 'libinput Natural Scrolling Enabled' 1
+xinput --set-prop 'MSFT0001:00 04F3:3138 Touchpad' 'libinput Tapping Enabled' 1
+xinput --set-prop 'MSFT0001:00 04F3:3138 Touchpad' 'libinput Tapping Drag Lock Enabled' 1
